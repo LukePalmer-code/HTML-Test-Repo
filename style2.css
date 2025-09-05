@@ -504,56 +504,33 @@ footer {
 }
 
 /*-----------FACEBOOK---------------*/
-.facebook-feed-section {
-    background: #1877f2; /* Facebook blue */
-    color: #fff;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-
-.facebook-feed-container {
-    max-width: 1000px; /* wider container for larger feed */
-    margin: 0 auto;
-}
-
-.facebook-feed-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.facebook-feed-intro {
-    font-size: 1.2rem;
-    color: #e6e6e6;
-    margin-bottom: 3rem;
-}
-
 .facebook-feed-iframe-wrapper {
     width: 100%;
-    height: 800px;
+    height: 1200px; /* taller to show more content */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 1024px) {
     .facebook-feed-iframe-wrapper {
-        height: 700px;
+        height: 1000px;
     }
 }
 
 @media (max-width: 768px) {
     .facebook-feed-iframe-wrapper {
-        height: 600px;
+        height: 800px;
     }
 }
 
 @media (max-width: 480px) {
     .facebook-feed-iframe-wrapper {
-        height: 500px;
+        height: 600px;
     }
 }
+
 
 
 /* ---------- RESPONSIVE ---------- */
