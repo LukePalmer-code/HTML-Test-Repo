@@ -525,7 +525,7 @@ footer {
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
     .facebook-feed-iframe-wrapper {
         height: 600px;
     }
