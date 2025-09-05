@@ -27,28 +27,38 @@ nav .wrapper {
     justify-content: space-between;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/IMG_2165.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .hero-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;            /* fill most of the screen */
-    max-width: 900px;      /* but no wider than desktop */
+    width: 90%;          
+    max-width: 900px;     
     padding: 1rem 1.5rem;  
     border-radius: 5px;
-    text-align: center;    /* centers all text inside */
+    text-align: center;    
 }
 
 .hero-subtitle {
     display: block;
-    /* stack subtitle and button vertically on small screens */
     margin-bottom: 1rem;
 }
 
 .hero-subtitle button {
     display: inline-block;
     margin-left: 0;
-    /* remove left margin for stacked layout */
     width: auto;
     max-width: 100%;
     vertical-align: middle;
@@ -84,7 +94,6 @@ button {
         font-size: 1rem;
     }
 }
-
 
 footer {
     background: #000;
