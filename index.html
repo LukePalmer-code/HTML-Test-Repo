@@ -2,25 +2,259 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel= "stylesheet" href="../styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rally Prep Co</title>
+    <link rel="stylesheet" href="../style2.css" />
 </head>
 
 <body>
-    <h1>Fancy Text</h1>
-    <div>
-        <button>click me</button>
-        <a href="www.youtube.com"> Link test </a>
-        <a href="./pages/about.html"> html</a>
-        <a href="./pages/flextest.html"> flextest</a>
-        <form>
-            <label for="search">search</label>
-            <input type=" text" name="search" id="search">
-            <button type="submit">search</button>
-        </form>
-    </div>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"> <img src="../images/logo.png"></div>
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">For Sale</a></li>
+                <li><a id="contact-link" href="#">Contact Us</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+    <header class="hero center px3 py4 white">
+        <div class="hero-text-container">
+            <h1 class="hero-title">AM RallySport</h1>
+            <p class="hero-subtitle">
+                Unbeatable rally car preperation & maintenance you can count on for every event.
+            </p>
+            <button type="submit">Contact Us</button>
+        </div>
+    </header>
+
+    <section class="about-us-section">
+        <div class="about-us-container">
+            <!-- Left Column: Text -->
+            <div class="about-us-text">
+                <h2 class="about-us-title">About AM RallySport</h2>
+                <p class="about-us-tagline">Passion. Precision. Performance.</p>
+
+                <p>
+                    We are <strong>AM RallySport</strong>, a rally car prep company based in Southern England.
+                    With years of experience supporting grassroots and professional rally teams,
+                    we specialize in preparing, maintaining, and transporting competition-ready cars.
+                </p>
+
+                <p>
+                    Whether you're racing historic events or entering your first stage rally,
+                    our team ensures your car performs at its peak — every time.
+                </p>
+
+                <div class="about-us-highlights">
+                    <div class="highlight-box">Secure Storage</div>
+                    <div class="highlight-box">Event Transport</div>
+                    <div class="highlight-box">Full Service Support</div>
+                </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="about-us-image-wrapper">
+                <img src="../images/deltaPicture1.jpg" alt="Rally Car" class="about-us-image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section">
+        <div class="services-container">
+            <h2 class="services-title">Our Services</h2>
+            <p class="services-intro">
+                From the workshop to the rally stage, we provide complete support to keep your car competitive.
+            </p>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <h3>Storage & Maintenance</h3>
+                    <p>
+                        Secure storage and full maintenance between events.
+                        We keep your car in peak condition, ready for the next stage.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <h3>Event Support</h3>
+                    <p>
+                        We transport your car to events, ensuring it arrives prepared and competition-ready.
+                        All logistics handled for you.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <h3>On-Event Servicing</h3>
+                    <p>
+                        Dedicated service throughout the rally.
+                        From quick fixes to full repairs, we keep you running until the finish line.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facebook-feed-section">
+        <div class="facebook-feed-container">
+            <h2 class="facebook-feed-title">Follow Us on Facebook</h2>
+            <p class="facebook-feed-intro">See our latest updates, rally highlights, and event coverage.</p>
+
+            <div class="fb-page" data-href="https://www.facebook.com/AMRallySport" data-tabs="timeline" data-width="500"
+                data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/AMRallySport" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/AMRallySport">AM RallySport</a>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="for-sale-section">
+        <div class="for-sale-container">
+            <h2 class="for-sale-title">Cars for Sale</h2>
+            <p class="for-sale-intro">High-performance rally cars available for purchase. Updated regularly.</p>
+
+            <div class="for-sale-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Lancia Delta for sale">
+                    </div>
+                    <h3 class="car-name">Lancia Delta Integrale</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Subaru Impreza for sale">
+                    </div>
+                    <h3 class="car-name">Subaru Impreza WRX</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Ford Escort Mk2 for sale">
+                    </div>
+                    <h3 class="car-name">Ford Escort Mk2</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Mitsubishi Evo VI for sale">
+                    </div>
+                    <h3 class="car-name">Mitsubishi Evo VI</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Peugeot 205 GTI for sale">
+                    </div>
+                    <h3 class="car-name">Peugeot 205 GTI</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="../images/deltaPicture1.jpg" alt="Toyota Celica GT-Four for sale">
+                    </div>
+                    <h3 class="car-name">Toyota Celica GT-Four</h3>
+                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">Contact Us</h2>
+            <p class="contact-intro">We’d love to hear from you. Send us a message or reach us directly.</p>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+
+                <!-- Company Details -->
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Phone:</strong> <a href="tel:+441234567890">+44 1234 567890</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@amrallysport.com">info@amrallysport.com</a></p>
+                    <p>Based in Southern England — supporting rally teams nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>AM RallySport</h3>
+                <p>Comprehensive rally car prep & maintenance. Performance and reliability on every stage.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">For Sale</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:info@amrallysport.com">info@amrallysport.com</a></p>
+                <p>Phone: <a href="tel:+441234567890">+44 1234 567890</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 AM RallySport. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 
 </html>
