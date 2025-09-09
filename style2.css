@@ -536,14 +536,13 @@ footer {
 }
 
 .facebook-feed-iframe-wrapper {
-    width: 100%;
-    height: 800px;
-    /* default desktop height */
-    border-radius: 12px;
+    max-width: 500px;   /* match the width param in the iframe URL */
+    height: 800px;       /* match the height param in the iframe URL */
+    margin: 0 auto;      /* centers the white box */
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    background: #fff;
-    /* prevents blue bleed if iframe doesn't fill */
+    background: #fff;    /* white background */
 }
 
 .facebook-feed-iframe-wrapper iframe {
