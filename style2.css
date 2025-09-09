@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---------- NAVBAR ---------- */
 nav {
     position: fixed;
@@ -217,7 +221,6 @@ nav .wrapper {
 }
 
 /* ---------- ABOUT US Responsive ---------- */
-/* About Us Image - Desktop Hover */
 .about-us-image {
     width: 100%;
     max-width: 500px;
@@ -253,7 +256,6 @@ nav .wrapper {
     box-shadow: 0 12px 28px rgba(200, 245, 38, 0.935);
   }
 }
-
 
 /* ---------- SERVICES ---------- */
 .services-section {
