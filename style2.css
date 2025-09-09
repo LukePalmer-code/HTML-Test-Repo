@@ -15,6 +15,61 @@ nav {
     background: #242526;
 }
 
+/* Hide nav links and show menu button on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* hide off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #242526;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 70px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #f2f2f2;
+  }
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f2f2f2;
+  }
+
+  .nav-links.active {
+    right: 0; /* slide in menu */
+  }
+}
+
+/* Hide menu button on desktop */
+.menu-btn,
+.close-btn {
+  display: none;
+}
+
 nav .wrapper {
     max-width: 1300px;
     padding: 0 30px;
@@ -323,8 +378,6 @@ nav .wrapper {
         height: 180px;
     }
 }
-
-
 
 /* ---------- CONTACT ---------- */
 .contact-section {
