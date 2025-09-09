@@ -245,12 +245,12 @@ nav .wrapper {
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    transition: none; /* disable transform/box-shadow on mobile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .about-us-image:hover {
-    transform: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(200, 245, 38, 0.935);
   }
 }
 
