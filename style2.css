@@ -59,7 +59,8 @@ nav .wrapper {
 /* Menu buttons */
 .menu-btn,
 .close-btn {
-    display: none; /* hide by default */
+    display: none;
+    /* hide by default */
 }
 
 /* ---------- HERO ---------- */
@@ -502,7 +503,7 @@ footer {
 
 .facebook-feed-iframe-wrapper {
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     height: 800px;
     margin: 0 auto;
     border-radius: 0px;
@@ -519,18 +520,48 @@ footer {
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 1200px) { .facebook-feed-iframe-wrapper { height: 750px; } }
-@media (max-width: 1024px) { 
-    .facebook-feed-iframe-wrapper { height: 700px; } 
-    .hero-title { font-size: 4rem; }
-    .hero-subtitle { font-size: 1.5rem; }
+@media (max-width: 1200px) {
+    .facebook-feed-iframe-wrapper {
+        height: 750px;
+    }
 }
+
+@media (max-width: 1024px) {
+    .facebook-feed-iframe-wrapper {
+        height: 700px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+
     /* HERO */
-    .hero { padding: 0 1.5rem; background-attachment: scroll; }
-    .hero-title { font-size: 2.5rem; line-height: 1.2; }
-    .hero-subtitle { font-size: 1.2rem; margin-bottom: 1.5rem; }
-    .hero button { font-size: 0.9rem; padding: 0.6rem 2rem; }
+    .hero {
+        padding: 0 1.5rem;
+        background-attachment: scroll;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+        padding: 0.6rem 2rem;
+    }
 
     /* NAVBAR */
     .nav-links {
@@ -546,24 +577,70 @@ footer {
         transition: right 0.3s ease;
         z-index: 999;
     }
-    .nav-links li { width: 100%; }
-    .nav-links li a { display: block; width: 100%; padding: 1rem 2rem; font-size: 1.2rem; }
-    .nav-links.active { right: 0; }
 
-    .menu-btn, .close-btn { display: block; font-size: 1.5rem; color: #f2f2f2; cursor: pointer; }
-    .close-btn { position: absolute; top: 20px; right: 20px; }
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-btn,
+    .close-btn {
+        display: block;
+        font-size: 1.5rem;
+        color: #f2f2f2;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
     /* FOR SALE GRID */
-    .for-sale-grid { grid-template-columns: 1fr; }
-    .car-image-wrapper img { height: 180px; }
+    .for-sale-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .car-image-wrapper img {
+        height: 180px;
+    }
 
     /* CONTACT */
-    .contact-grid { grid-template-columns: 1fr; }
-    .contact-details { margin-top: 2rem; }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        margin-top: 2rem;
+    }
 }
+
 @media (max-width: 480px) {
-    .hero-title { font-size: 2rem; }
-    .hero-subtitle { font-size: 1rem; }
-    .hero button { width: 100%; max-width: 300px; }
-    .facebook-feed-iframe-wrapper { height: 500px; }
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .facebook-feed-iframe-wrapper {
+        height: 500px;
+    }
 }
