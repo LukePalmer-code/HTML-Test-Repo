@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ---------- NAV ---------- */
+/* ---------- NAVBAR ---------- */
 nav {
     position: fixed;
     z-index: 99;
@@ -36,6 +36,7 @@ nav .wrapper {
     display: flex;
     align-items: center;
     list-style: none;
+    transition: all 0.3s ease;
 }
 
 .nav-links li a {
@@ -54,6 +55,61 @@ nav .wrapper {
 
 #contact-link {
     color: rgba(200, 245, 38, 0.935);
+}
+
+/* Hide menu button by default */
+.menu-btn,
+.close-btn {
+    display: none;
+}
+
+/* ---------- RESPONSIVE: MOBILE NAV ---------- */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        font-size: 2rem;
+        color: #f2f2f2;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: #242526;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 70px;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f2f2f2;
+    }
 }
 
 /* Menu buttons */
@@ -97,9 +153,9 @@ nav .wrapper {
 .hero button {
     background: linear-gradient(135deg, rgba(200, 245, 38, 0.935), rgba(200, 245, 38, 0.935));
     color: #003366;
-    font-weight: 800;
+    font-weight: 850;
     font-size: 1rem;
-    padding: 0.6rem 3rem;
+    padding: 0.7rem 3rem;
     border: none;
     border-radius: 100px;
     cursor: pointer;

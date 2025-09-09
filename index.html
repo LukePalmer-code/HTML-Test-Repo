@@ -11,18 +11,25 @@
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"> <img src="../images/logo.png"></div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation links -->
             <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">For Sale</a></li>
-                <li><a id="contact-link" href="#">Contact Us</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#for-sale">For Sale</a></li>
+                <li><a href="#contact" id="contact-link">Contact Us</a></li>
+                <span class="close-btn">&times;</span>
             </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+
+            <!-- Hamburger menu button -->
+            <div class="menu-btn">&#9776;</div>
         </div>
     </nav>
+
 
     <header class="hero center px3 py4 white">
         <div class="hero-text-container">
@@ -255,5 +262,26 @@
     </footer>
 
 </body>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 
 </html>
