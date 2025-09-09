@@ -217,26 +217,43 @@ nav .wrapper {
 }
 
 /* ---------- ABOUT US Responsive ---------- */
-@media (max-width: 768px) {
-  .about-us-container {
-    grid-template-columns: 1fr; /* stack text + image */
-    gap: 2rem;
-  }
-
-  .about-us-image {
-    width: 100%;       /* full width of its container */
-    max-width: 500px;  /* optional: prevent it from getting huge on tablets */
-    margin: 0 auto;    /* center image */
+/* About Us Image - Desktop Hover */
+.about-us-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
 }
 
 .about-us-image:hover {
     transform: scale(1.03);
     box-shadow: 0 12px 28px rgba(200, 245, 38, 0.935);
 }
+
+/* Responsive - Mobile: remove hover effect */
+@media (max-width: 768px) {
+  .about-us-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-us-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: none; /* disable transform/box-shadow on mobile */
+  }
+
+  .about-us-image:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
 
 /* ---------- SERVICES ---------- */
 .services-section {
