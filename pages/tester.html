@@ -11,30 +11,37 @@
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"> <img src="../images/logo.png"></div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation links -->
             <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">For Sale</a></li>
-                <li><a id="contact-link" href="#">Contact Us</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-us-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#for-sale-section">For Sale</a></li>
+                <li><a href="#contact-section" id="contact-link">Contact Us</a></li>
+                <span class="close-btn">&times;</span>
             </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+
+            <!-- Hamburger menu button -->
+            <div class="menu-btn">&#9776;</div>
         </div>
     </nav>
 
-    <header class="hero center px3 py4 white">
+
+    <header class="hero center px3 py4 white" id="hero">
         <div class="hero-text-container">
             <h1 class="hero-title">AM RallySport</h1>
             <p class="hero-subtitle">
                 Unbeatable rally car preperation & maintenance you can count on for every event.
             </p>
-            <button type="submit">Contact Us</button>
+            <button type="submit" id="hero-contact-btn">Contact Us</button>
         </div>
     </header>
 
-    <section class="about-us-section">
+    <section class="about-us-section" id="about-us-section">
         <div class="about-us-container">
             <!-- Left Column: Text -->
             <div class="about-us-text">
@@ -67,7 +74,7 @@
     </section>
 
 
-    <section class="services-section">
+    <section class="services-section" id="services-section">
         <div class="services-container">
             <h2 class="services-title">Our Services</h2>
             <p class="services-intro">
@@ -109,83 +116,65 @@
         <div class="facebook-feed-container">
             <h2 class="facebook-feed-title">Follow Us on Facebook</h2>
             <p class="facebook-feed-intro">See our latest updates, rally highlights, and event coverage.</p>
-
-            <div class="fb-page" data-href="https://www.facebook.com/AMRallySport" data-tabs="timeline" data-width="500"
-                data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/AMRallySport" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/AMRallySport">AM RallySport</a>
-                </blockquote>
+            <div class="facebook-feed-iframe-wrapper">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAMRallySport&tabs=timeline&width=1000&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
             </div>
         </div>
     </section>
 
 
-
-    <section class="for-sale-section">
+    <section class="for-sale-section" id="for-sale-section">
         <div class="for-sale-container">
-            <h2 class="for-sale-title">Cars for Sale</h2>
-            <p class="for-sale-intro">High-performance rally cars available for purchase. Updated regularly.</p>
+            <h2 class="for-sale-title">Cars For Sale</h2>
+            <p class="for-sale-intro">Check out our latest rally cars available for purchase.</p>
 
             <div class="for-sale-grid">
-                <!-- Car 1 -->
+                <!-- Listing 1 -->
                 <div class="car-card">
                     <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Lancia Delta for sale">
+                        <img src="../images/deltaPicture1.jpg" alt="Car 1">
                     </div>
-                    <h3 class="car-name">Lancia Delta Integrale</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                    <h3 class="car-name">Delta Rally Car 1</h3>
+                    <a href="#" class="car-link">View Listing</a>
                 </div>
 
-                <!-- Car 2 -->
+                <!-- Listing 2 -->
                 <div class="car-card">
                     <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Subaru Impreza for sale">
+                        <img src="../images/deltaPicture1.jpg" alt="Car 2">
                     </div>
-                    <h3 class="car-name">Subaru Impreza WRX</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                    <h3 class="car-name">Delta Rally Car 2</h3>
+                    <a href="#" class="car-link">View Listing</a>
                 </div>
 
-                <!-- Car 3 -->
+                <!-- Listing 3 -->
                 <div class="car-card">
                     <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Ford Escort Mk2 for sale">
+                        <img src="../images/deltaPicture1.jpg" alt="Car 3">
                     </div>
-                    <h3 class="car-name">Ford Escort Mk2</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                    <h3 class="car-name">Delta Rally Car 3</h3>
+                    <a href="#" class="car-link">View Listing</a>
                 </div>
 
-                <!-- Car 4 -->
+                <!-- Listing 4 -->
                 <div class="car-card">
                     <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Mitsubishi Evo VI for sale">
+                        <img src="../images/deltaPicture1.jpg" alt="Car 4">
                     </div>
-                    <h3 class="car-name">Mitsubishi Evo VI</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
+                    <h3 class="car-name">Delta Rally Car 4</h3>
+                    <a href="#" class="car-link">View Listing</a>
                 </div>
 
-                <!-- Car 5 -->
-                <div class="car-card">
-                    <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Peugeot 205 GTI for sale">
-                    </div>
-                    <h3 class="car-name">Peugeot 205 GTI</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
-                </div>
-
-                <!-- Car 6 -->
-                <div class="car-card">
-                    <div class="car-image-wrapper">
-                        <img src="../images/deltaPicture1.jpg" alt="Toyota Celica GT-Four for sale">
-                    </div>
-                    <h3 class="car-name">Toyota Celica GT-Four</h3>
-                    <a href="#" class="car-link" target="_blank">View Listing</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-section">
+
+    <section class="contact-section" id="contact-section">
         <div class="contact-container">
             <h2 class="contact-title">Contact Us</h2>
             <p class="contact-intro">We’d love to hear from you. Send us a message or reach us directly.</p>
@@ -228,41 +217,53 @@
     </section>
 
 
-  <footer>
-    <div class="footer-container">
-        <!-- About -->
-        <div class="footer-about">
-            <h3>AM RallySport</h3>
-            <p>Comprehensive rally car prep & maintenance. Performance and reliability on every stage.</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>AM RallySport</h3>
+                <p>Comprehensive rally car prep & maintenance. Performance and reliability on every stage.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">For Sale</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:info@amrallysport.com">info@amrallysport.com</a></p>
+                <p>Phone: <a href="tel:+441234567890">+44 1234 567890</a></p>
+            </div>
         </div>
-
-        <!-- Quick Links -->
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">For Sale</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="footer-bottom">
+            © 2025 AM RallySport. All rights reserved.
         </div>
-
-        <!-- Contact Details -->
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:info@amrallysport.com">info@amrallysport.com</a></p>
-            <p>Phone: <a href="tel:+441234567890">+44 1234 567890</a></p>
-            <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        &copy; 2025 AM RallySport. All rights reserved.
-    </div>
-</footer>
-
+    </footer>
 
 </body>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => navLinks.classList.add('active'));
+    closeBtn.addEventListener('click', () => navLinks.classList.remove('active'));
+
+    // Close menu when a nav link is clicked
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+
+    document.getElementById('hero-contact-btn').addEventListener('click', () => {
+        document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+
 
 </html>
