@@ -407,7 +407,7 @@ nav .wrapper {
 /* Modal overlay */
 .modal {
     display: none;
-    /* hidden by default */
+    /* THIS hides the modal initially */
     position: fixed;
     top: 0;
     left: 0;
@@ -415,16 +415,10 @@ nav .wrapper {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
-
-    display: flex;
     justify-content: center;
-    /* centers horizontally */
     align-items: center;
-    /* centers vertically */
-    padding: 2rem;
-    box-sizing: border-box;
-    overflow: auto;
 }
+
 
 .modal-content {
     background: #fff;
